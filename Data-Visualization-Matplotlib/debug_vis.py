@@ -41,6 +41,7 @@ if __name__ == '__main__':
     node2.adjacency_list.append(node4)
     node4.adjacency_list.append(node5)
 
-    # run the DFS
+    # run the DFS for display
     depth_first_search(node1)
+    
    
