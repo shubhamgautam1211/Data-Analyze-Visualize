@@ -35,4 +35,12 @@ if __name__ == '__main__':
     node4 = Node("D")
     node5 = Node("E")
 
+     # handle and set the neighbors accordingly
+    node1.adjacency_list.append(node2)
+    node1.adjacency_list.append(node3)
+    node2.adjacency_list.append(node4)
+    node4.adjacency_list.append(node5)
+
+    # run the DFS
+    depth_first_search(node1)
    
