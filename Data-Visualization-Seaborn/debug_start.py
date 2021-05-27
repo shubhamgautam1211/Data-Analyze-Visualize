@@ -26,6 +26,10 @@ class Stack:
     # O(1) constant running time
     def peek(self):
         return self.stack[-1]
+    
+     # O(1)
+    def size_stack(self):
+        return len(self.stack)
 
    
 
