@@ -21,4 +21,11 @@ class Stack:
         data = self.stack[-1]
         del self.stack[-1]
         return data
+    
+    
+    # O(1) constant running time
+    def peek(self):
+        return self.stack[-1]
+
+   
 
