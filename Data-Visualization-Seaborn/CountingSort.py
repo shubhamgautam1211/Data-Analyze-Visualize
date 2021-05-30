@@ -28,5 +28,6 @@ if __name__ == '__main__':
     counting_sort = CountingSort(n)
     counting_sort.sort()
     print(counting_sort.data)
+    print(counting_sort.iris)
 
 
