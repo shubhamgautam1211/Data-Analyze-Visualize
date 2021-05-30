@@ -11,7 +11,7 @@ class CountingSort:
         # first we have to consider all the items in data in O(N) running time
         # indexes start with 0 + we should handle negative values as well
         for i in range(len(self.data)):
-            self.count_array[self.data[i]-min(self.data)] += 1
+            self.count_array[self.data[i]-min(self.data)] += 1    #
 
         # we have to consider the counting array in O(k)
         z = 0
@@ -28,6 +28,6 @@ if __name__ == '__main__':
     counting_sort = CountingSort(n)
     counting_sort.sort()
     print(counting_sort.data)
-    print(counting_sort.iris)
+    print(counting_sort.iris) 
 
 
