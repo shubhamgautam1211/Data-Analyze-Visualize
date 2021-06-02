@@ -79,4 +79,14 @@ class Heap:
         if index != largest_index:
             self.heap[index], self.heap[largest_index] = self.heap[largest_index], self.heap[index]
             self.fix_down(largest_index)
+            
+                def heap_sort(self):
+
+        # we consider N items - it takes O(logN) to get the max (poll function)
+        # N*O(logN) = O(NlogN)
+        for _ in range(self.heap_size):
+            max_item = self.poll()
+            print(max_item)
+
+
 
