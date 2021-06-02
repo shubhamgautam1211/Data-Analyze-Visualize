@@ -45,16 +45,7 @@ class Heap:
     # it has O(logN) running time complexity
     def poll(self):
 
-        max_item = self.get_max()
-
-        # swap the root node with the last item and "heapify"
-        self.heap[0], self.heap[self.heap_size - 1] = self.heap[self.heap_size - 1], self.heap[0]
-        self.heap_size = self.heap_size - 1
-
-        # make sure the heap is "heapify"
-        self.fix_down(0)
-
-        return max_item
+       
 
     # starting with the root node downwards until the heap properties are no longer
     # violated - O(logN)
@@ -96,4 +87,10 @@ if __name__ == '__main__':
     heap.insert(13)
     heap.insert(-2)
     
+heap.insert(0)
+    heap.insert(8)
+    heap.insert(1)
+    heap.insert(-5)
+    heap.insert(99)
 
+    heap.heap_sort()
