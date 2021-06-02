@@ -90,3 +90,10 @@ class Heap:
 
 
 
+if __name__ == '__main__':
+
+    heap = Heap()
+    heap.insert(13)
+    heap.insert(-2)
+    
+
