@@ -7,15 +7,6 @@ class Node:
         self.visited = False
 
 
-def depth_first_search(node):
-
-    node.visited = True
-    print(node.name)
-
-    for n in node.adjacency_list:
-        if not n.visited:
-            depth_first_search(n)
-
 
 if __name__ == '__main__':
 
