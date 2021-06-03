@@ -27,3 +27,7 @@ if __name__ == '__main__':
     node5 = Node("E")
 
 
+    # handle and set the neighbors accordingly
+    node1.adjacency_list.append(node2)
+    node1.adjacency_list.append(node3)
+   
