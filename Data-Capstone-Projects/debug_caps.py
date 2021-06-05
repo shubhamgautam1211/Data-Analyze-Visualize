@@ -35,5 +35,10 @@ if __name__ == '__main__':
     node3 = Node("C")
     node4 = Node("D")
     node5 = Node("E")
+    
+    # handle and set the neighbors accordingly
+    node1.adjacency_list.append(node2)
+  
+
 
     
